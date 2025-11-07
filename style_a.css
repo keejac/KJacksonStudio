@@ -1,0 +1,98 @@
+body {
+  font-family: system-ui;
+  background: #D9k1F8;
+  color: #000111;
+  text-align: left;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 120%;
+}
+
+h2 {
+  font-size: 100%;
+  text-algin: left;
+}
+
+p, a {
+  line-height: 180%;
+}
+
+img {
+  max-width: 20rem;
+}
+
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin-left: -1rem;
+}
+
+
+.flex {
+  display: flex;
+}
+
+.Nav {
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+}
+
+  .NavGroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+.body {
+  width: 30rem;
+}
+
+mark {
+  font-weight: 500;
+  background-color: gold;
+}
+
+
+@media (max-width:900px) {
+    .flex {
+  flex-direction: column;
+  align-items: stretch;
+  }
+  
+  img {
+    max-width: auto;
+  }
+  
+  
+  .Nav, .body {
+    width: auto;
+  }
+  
+  .NavGroup {
+  border-bottom: solid black 1px;
+  padding: 0.5rem;
+  }
+  
+  .NavGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+ .Nav h2 {
+    padding: 10px 14px;
+    margin: 0;
+  }
+  
+  a {
+    padding: 10px 14px;
+    line-height: 120%;
+  }
+}
