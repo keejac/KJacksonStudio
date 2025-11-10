@@ -1,0 +1,190 @@
+body {
+  font-family: system-ui;
+  background: #D9k1F8;
+  color: #000111;
+  text-align: left;
+  padding: 1rem;
+}
+
+h1 {
+  font-size: 120%;
+}
+
+
+h2 {
+  font-size: 100%;
+  text-algin: left;
+}
+
+p, a {
+  line-height: 180%;
+}
+
+img {
+  max-width: 20rem;
+}
+
+.thumb {
+  padding: 0.5rem;
+}
+
+label img {
+  width: 8rem;
+}
+
+#Click {
+    display: none;
+}
+
+#Click:checked + label > img {
+    width: 17rem;
+    height: auto;
+}
+
+#Click1 {
+    display: none;
+}
+
+#Click1:checked + label > img {
+    width: 17rem;
+    height: auto;
+
+}
+
+#Click2 {
+    display: none;
+}
+
+#Click2:checked + label > img {
+    width: 17rem;
+    height: auto;
+
+}
+
+#Click3 {
+    display: none;
+}
+
+#Click3:checked + label > img {
+    width: 17rem;
+    height: auto;
+
+}
+
+.NavGroup a {
+  text-decoration: none;
+}
+
+a {
+  color: #4A3700;
+}
+
+.flex {
+  display: flex;
+}
+
+.Nav {
+  flex: 0 1 16rem;
+  display: flex;
+  flex-direction: column;
+}
+
+  .NavGroup {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+.body {
+ flex: 0 1 30rem;
+  padding: 0 2rem;
+}
+
+.gallery {
+  margin-top: 1rem;
+ flex: 0 1 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  height: auto;
+}
+
+mark {
+  font-weight: 500;
+  background-color: gold;
+}
+
+.footnote {
+  font-size: 80%;
+}
+
+.H1a {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 100%;
+  color: black;
+}
+
+
+@media (max-width:900px) {
+    .flex {
+  flex-direction: column;
+  align-items: stretch;
+  }
+  
+  img {
+    max-width: auto;
+  }
+  
+  
+  .Nav, .body {
+  flex: 0 1 auto;
+    padding: 0;
+  }
+  
+  .Nav {
+    order: 1;
+  }
+  
+  .body {
+    order: 3;
+  }
+  
+  .gallery {
+    order: 2;
+   margin-top: 0;
+ flex: 0 1 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-start;
+    justify-content: center;
+  }
+  
+  .NavGroup {
+  border-top: solid black 1px;
+  padding: 0.5rem;
+  }
+  
+  .NavGroup {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+ .Nav h2 {
+    padding: 10px 14px;
+    margin: 0;
+  }
+  
+  a {
+    padding: 10px 14px;
+    line-height: 120%;
+  }
+  
+  .H1a {
+    padding: 0;
+    line-height: 100%;
+  }
+}
+
